@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgb(240, 240, 250),rgba(180, 173, 173, 0.3)); */
+    position: relative;
+    padding: 0 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h5.logo a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+}
+nav ul li {
+    list-style: none ;
+    display: inline-block;
+    margin-left: 16px;
+
+}
+
+
+.btn{
+    text-decoration: none;
+    color:#fff;
+    font-size:13px;
+    border: #fff 2px solid;
+    border-radius: 20px;
+    
+}
+
+
+.btn:hover{
+    color: #000;
+    background-color: #fff;
+    transition: 0.8s;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size:14px;
+}
+
+nav ul li a:hover{
+    color: #fff;
+   border-bottom: #fff 2px solid;
+   transition: .5s;
+}
+
+
+.content{
+    text-align: center;
+}
+
+
+.content h1{
+    font-size: 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 80px;
+    transition: 0.5s;
+}
+.content h1:hover{
+  -webkit-text-stroke:2px #fff;
+  color: transparent;
+}
+.content p{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    
+}
+.content p{
+    margin:  0px 200px;
+    margin-bottom: 20px;
+} 
+.content a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    margin-left: 30px;
+}
+.content a:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.8s;
+
+}
+
+.back-video{
+    position:absolute;
+    height: 0;
+    width: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px){
+    .content h1{
+        font-size: 40px;
+    }
+    .content p{
+        margin:  0px 50px;
+        margin-bottom: 20px;
+    }
+    .content a{
+        font-size: 15px;
+        padding: 10px 20px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 480px){
+    .content h1{
+        font-size: 30px;
+    }
+    .content p{
+        margin:  0px 20px;
+        margin-bottom: 20px;
+    }
+    .content a{
+        font-size: 15px;
+        padding: 10px 20px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .content h1{
+        font-size: 20px;
+    }
+    .content p{
+        margin:  0px 20px;
+        margin-bottom: 20px;
+    }
+    .content a{
+        font-size: 15px;
+        padding: 10px 20px;
+        margin-left: 30px;
+    }
+}
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+.clear {
+    margin-top: 150px;
+    clear: both;
+  }
+  /* Services Area */
+
+  .service-type{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .service-type  img {
+    height: 500px;
+    background-image: linear-gradient(rgb(1, 1, 192),rgba(160, 54, 54, 0.3));
+
+  }
+  .service-type .card{
+    height:900px;
+  }
+  .service-type .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .service-type .card .card-body{
+       margin: 10px 40px;
+  }
+  .service-type .card .card-body h5{
+    font-size: 40px;
+}
+.service-type .card .card-body p{
+    margin-top: 20px;
+    font-size: 15px;
+    /* font-weight: 100; */
+}
+.service-type .card .card-body a{
+
+   text-decoration: none;
+   color: black;
+   border: #000 2px solid;
+   border-radius: 25px;
+   padding: 12px;
+}
+
+.service-type .card .card-body a:hover{
+    color: #fff;
+    background: #000;
+    transition: 0.8s;
+
+}
+
+.membership-service{
+    margin: 40px;
+}
+.membership-service a{
+    text-decoration: none;
+    color: black;
+    border: #000 2px solid;
+    border-radius: 25px;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.membership-service a:hover{
+    color: #fff;
+    background: #000;
+    transition: 0.8s;
+}
+
+/* GET in touch form  */
+
+.contract{
+    background: rgb(182, 180, 180);
+    padding: 40px;
+}
+
+
+
+.get_in_touch{
+    max-width: 900px;
+    margin: 10px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,0.1);
+    padding: 30px ;
+}
+.get_in_touch .title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 2em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: #5543ca;
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.contact-form .form-field {
+
+    position: relative;
+    margin:32px 0;
+
+}
+
+.contact-form .input-text{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0 ;
+    border-color: #5543ca;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+
+
+
+.contact-form .input-text:focus +.label,
+.contact-form .input-text.not-empty + .label
+{
+    transform:translateY(-20px);
+}    
+
+.contact-form .input-text:focus{
+    outline: none;
+}
+.contact-form .label{
+    position: absolute;
+    left: 30px;
+    /* top: -20px; */
+    bottom: 11px;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.3s ease-in-out;
+}
+.contact-form  .submit-btn{
+   display: inline-block;
+   background-image: linear-gradient(125deg, #a72879,#064497);
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+/* OWL Carasel :start */
+
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+}
+
+body {
+    background-color: #f9f9fa
+}
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 3rem
+}
+
+
+.owl-carousel .item{
+ margin: 3px;
+}
+.owl-carousel .item img{
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+.owl-carousel .item {
+   margin: 3px;
+}
+
+.owl-carousel{
+   margin-bottom:15px;
+}
+
+
+
+
+div .item{
+    height: 130px
+}
+
+
+
+/* OWL Carousel End */
+
+footer div a{
+    text-decoration: none;
+}
+
+#service{
+  padding: 50px;
+}
+
+.videopopup img{
+    height:340px;
+    width: 500px;
+    /* padding-left:60px ; */
+}
+
+.section-main-title{
+
+    margin-bottom: 7px;
+    padding-left: 7px;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    border-left:3px solid #525251 ;
+    padding-bottom: 10px;
+}
+
+.button a{
+
+    text-decoration: none;
+    color: black;
+    border: #000 2px solid;
+    border-radius: 25px;
+    padding: 12px;
+ }
+ 
+ .button a:hover{
+     color: #fff;
+     background: #000;
+     transition: 0.8s;
+ 
+ }
+
+ .section-main-title{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 20px;
+ }
+ .left{
+    margin-left: 100px;
+ }
+
+ @media only screen and (max-width: 600px) {
+    .left{
+        margin-left: 0px;
+    }
+    .videopopup img{
+        height: 200px;
+        width: 300px;
+    }
+    .section-main-title{
+        font-size: 20px;
+    }
+    .button a{
+        font-size: 10px;
+    }
+    .service-type .card .card-body h5{
+        font-size: 20px;
+    }
+    .service-type .card .card-body p{
+        font-size: 10px;
+    }
+    .service-type .card .card-body a{
+        font-size: 10px;
+    }
+    .membership-service a{
+        font-size: 10px;
+    }
+    .get_in_touch .title{
+        font-size: 20px;
+    }
+    .contact-form .input-text{
+        font-size: 10px;
+    }
+    .contact-form .label{
+        font-size: 10px;
+    }
+    .contact-form  .submit-btn{
+        font-size: 10px;
+    }
+    .owl-carousel .item img{
+        height: 100px;
+        width: 200px;
+    }
+    .owl-carousel .item{
+        margin: 1px;
+    }
+    .owl-carousel{
+        margin-bottom: 5px;
+    }
+}
